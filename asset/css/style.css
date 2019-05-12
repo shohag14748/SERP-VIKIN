@@ -425,7 +425,7 @@ section.banner-with-bg .content{
     max-width: 700px;
     width: 80%;
     top: 50%;
-    left: 15%;
+/*    left: 15%;*/
     transform: translateY(-50%);
     z-index: 9;
     color: #fff;
@@ -446,17 +446,15 @@ section.banner-with-bg .content h1{
 }
 section.banner-with-bg .content h2{
     max-width: 500px;
+    font-weight: 400;
 }
 
-
-@media (min-width:575px){
+@media (max-width:500px){
     section.banner-with-bg .content h1{
-        font-size: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
+    
 }
-
-
 
 
 /*------------------------------------------*/
@@ -484,7 +482,7 @@ section.points h2::before{
     top: 6px;
 }
 section.points .contents{
-    max-width: 800px;
+    max-width: 768px;
     margin: auto;
 }
 section.points .contents .moddle{
@@ -519,7 +517,7 @@ section.points .contents .moddle::after{
     
 
 section.details .single-item{
-    max-width: 990px;
+    max-width: 768px;
     margin: auto;
     padding: 50px 0;
 }
@@ -530,6 +528,10 @@ section.details .single-item img{
 }
 section.details .single-item h2{
     font-weight: 400;
+}
+section.details .single-item p{
+    font-weight: 400;
+    font-size: 14px;
 }
 section.details .single-item.middle{
     position: relative;
