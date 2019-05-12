@@ -1,0 +1,561 @@
+/*
+Theme Name: SERP VIKING
+Description: Designed by SERP VIKING.
+Version: 1
+Author: SERP VIKING
+*/
+
+/*------------------------------------------*/
+        /*  General  */
+/*------------------------------------------*/
+
+*{
+    margin: 0;padding: 0;outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1{font-size: 30px;}
+h2{font-size: 18px;letter-spacing: .5px}
+p{font-size: 12px;}
+.btn{border: 0; font-size: 14px;}
+a:hover{text-decoration: none;}
+body{overflow-x: hidden;}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title h2{
+    margin-bottom: 40px;
+    position: relative;
+    color: #2c2c2c;
+    font-weight: 400;
+}   
+.title h2::before{
+    content: '';
+    width: 100%;height: 1px;
+    position: absolute;
+    background: #aeaeae;
+    bottom: 0;
+}
+
+
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button a{
+    display: block;
+    background: #634296;
+    color: #fff;
+    border: 1px solid #634296;
+    border-radius: 3px;
+    transition: .5s;
+    
+}
+.button a:hover{
+    background: #fff;
+    color: #2c2c2c;
+}
+.button.white a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2c2c2c;
+    background: #fff;
+    border: 1px solid #fff;
+}
+.button.white a:hover{
+    background: #634296 !important;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+/*------------------------------------------*/
+        /*  Header  */
+/*------------------------------------------*/
+
+.header{
+    background: #eeeeee;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.header .nav-link{
+    font-size: 14px;
+    color: #634296 !important;
+}
+.header .nav-link:hover,
+.header .nav-item.active .nav-link{
+    color: #aeaeae !important;
+}
+.button .login{
+    color: #634296;
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+}
+.button .login:hover{
+    background: #634296;
+    color: #fff;
+    border: 1px solid #634296;
+}
+
+/*------------------------------------------*/
+        /*  Banner  */
+/*------------------------------------------*/
+
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%; 
+}
+.banner .content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner .content{
+    color: #fff;
+    padding-left: 40px;
+    box-sizing: border-box;
+    max-width: 90%
+}
+.banner .content h1{
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.banner .content::before{
+    content: '';
+    width: 4px;
+    height: 120%;
+    background: #fff;
+    position: absolute;
+    left: 20px;
+    top: -10%;
+    top: -10%;
+}
+.banner .content h2{
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+/*------------------------------------------*/
+        /*  Icon banner  */
+/*------------------------------------------*/
+
+.iconbanner{
+    padding: 20px 0 10px;
+    text-align: center;
+    border-bottom: 2px solid #2c2c2c;
+}
+.iconbanner .container{
+    max-width: 800px;
+}
+.iconbanner .content img{
+    height: 55px;
+    display: block;
+    margin: auto;
+}
+.iconbanner .content h2{
+    max-width: 150px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #2c2c2c;
+}
+    
+   
+/*------------------------------------------*/
+        /*  Tracking    */
+/*------------------------------------------*/
+
+.tracking{
+    padding: 50px 0;
+}
+.tracking .wrap{
+    max-width: 960px;
+    margin: auto;
+}
+.tracking img{
+    width: 100%;
+}
+.tracking .content{
+    background: #634296;
+    padding: 40px 15px;
+    height: 100%;
+}
+.tracking .content h1{
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.tracking .content p{
+    max-width: 400px;
+    color: #fff;
+    margin-top: 20px
+}
+.tracking .content .button.white a{
+    padding: 12px 30px;
+}
+.tracking .foot{
+    font-size: 14px;
+    color: #aeaeae;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/*------------------------------------------*/
+        /* Testimonials */
+/*------------------------------------------*/
+    
+.testimonials{
+    margin-bottom: 50px;
+}
+
+.testimonials .col-sm-6{
+    padding: 7px;
+}
+.testimonials .content{
+    padding: 50px 50px 30px;
+    border: 2px solid #aeaeae;
+    
+}
+.testimonials .content p{
+    font-size: 14px;
+    color: #aeaeae;
+}
+.testimonials .content .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials .content .details img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testimonials .content .details h2{
+    margin-top: 10px;
+    margin-left: 30px;
+    color:  #aeaeae;
+    font-weight: 400;
+}
+
+/*------------------------------------------*/
+        /* Blog */
+/*------------------------------------------*/
+
+.blog{
+    margin-bottom: 50px;
+}
+.blog img{
+    width: 100%;
+}
+.blog .text{
+    max-width: 300px;
+    margin: auto;
+    color: #2c2c2c;
+}  
+.blog .text h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*------------------------------------------*/
+        /* Newsletter */
+/*------------------------------------------*/
+    
+.newsletter{
+    background: #634296;
+    padding: 40px 0;
+}
+.newsletter .content{
+    max-width: 500px;
+    margin: auto;
+}
+.newsletter h2{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.newsletter p{
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.newsletter-input{
+    margin-top: 25px;
+    position: relative;
+}
+.newsletter-input input{
+    width: 100%;
+    border: none;
+    padding: 7px;
+    text-align: center;
+    padding-right: 30px;
+    border-radius: 30px;
+}
+.newsletter-input button{
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #634296;
+    top: 4px;
+    background: none;
+    color: #634296;
+    font-size: 20px;
+    transition: .5s;
+}
+.newsletter-input button:hover{
+    background-color: #634296;
+    color: #fff;
+}
+.newsletter-input button::placeholder{
+    color: #e9e9e9;
+}
+.newsletter .condition{
+    margin-top: 10px;
+    margin-left: 20px
+}
+.newsletter .condition input{
+    margin-top: 5px;
+}
+.newsletter .condition label{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.newsletter{
+    border-bottom: 2px solid #634297;
+}
+
+
+/*------------------------------------------*/
+        /* Footer */
+/*------------------------------------------*/
+
+footer{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background: #eeeeee;
+}
+footer .content{
+    max-width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translate(-40%);
+    margin-bottom: 10px;
+}
+footer .content h2{
+    font-weight: 400;
+}
+footer .content ul{
+    list-style: none;
+}
+footer .content ul a{
+    color: #2c2c2c;
+    font-size: 12px;
+    position: relative;
+    transition: .3s;
+    left: 0;
+}
+footer .content ul a:hover{
+    color: #634296;
+    left: 7px;
+}
+
+/*------------------------------------------*/
+        /*  Responsive   */
+/*------------------------------------------*/
+
+@media (min-width:991px){
+    .tracking .content{
+        padding: 40px;
+    }
+    .tracking .content h1{
+        margin-top: 30px;
+    }
+    .tracking .content p{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+}  
+
+
+
+
+
+
+/*------------------------------------------*/
+        /*  Optimisation Page   */
+/*------------------------------------------*/
+
+
+
+/*------------------------------------------*/
+        /*  Optimisation Banner   */
+/*------------------------------------------*/
+
+
+
+section.banner-with-bg{
+    position: relative;
+    overflow: hidden;
+}
+section.banner-with-bg img{
+    width: 100%; 
+}
+section.banner-with-bg .content{
+    position: absolute;
+    max-width: 700px;
+    width: 80%;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 9;
+    color: #fff;
+}
+section.banner-with-bg .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+section.banner-with-bg .content h1{
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+section.banner-with-bg .content h2{
+    max-width: 500px;
+}
+
+
+@media (min-width:575px){
+    section.banner-with-bg .content h1{
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+/*------------------------------------------*/
+        /*  Optimisation Points   */
+/*------------------------------------------*/
+
+
+section.points{
+    padding: 50px 0 40px;
+    border-bottom: 2px solid #634297;
+}
+section.points h2{
+    padding-left: 20px;
+    position: relative;
+    font-weight: 400;
+}
+section.points h2::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: #634297;
+    left: 0;
+    border-radius: 50%;
+    top: 6px;
+}
+section.points .contents{
+    max-width: 800px;
+    margin: auto;
+}
+section.points .contents .moddle{
+    position: relative;
+}
+section.points .contents .moddle::before{
+    content: '';
+    height: 30px;
+    width: 1px;
+    position: absolute;
+    background: #634297;
+    left: 0px;
+}
+section.points .contents .moddle::after{
+    content: '';
+    height: 30px;
+    width: 1px;
+    position: absolute;
+    background: #634297;
+    right: 0px;
+    top: 0;
+}
+
+
+
+@media (max-width:768px){
+    section.points .contents .moddle::before,
+    section.points .contents .moddle::after{
+        display: none;
+    }
+}
+    
+
+section.details .single-item{
+    max-width: 990px;
+    margin: auto;
+    padding: 50px 0;
+}
+section.details .single-item img{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+section.details .single-item h2{
+    font-weight: 400;
+}
+section.details .single-item.middle{
+    position: relative;
+}
+    
+section.details .single-item.middle::before{
+    content: '';
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    background: #634297;
+    top: -1px;
+    left: 50%;
+    transform: translate(-50%);
+}
+section.details .single-item.middle::after{
+    content: '';
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    background: #634297;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+    
+    
