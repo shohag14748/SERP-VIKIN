@@ -426,6 +426,7 @@ section.banner-with-bg .content{
     width: 80%;
     top: 50%;
 /*    left: 15%;*/
+    margin-left: 50px;
     transform: translateY(-50%);
     z-index: 9;
     color: #fff;
@@ -512,6 +513,10 @@ section.points .contents .moddle::after{
     section.points .contents .moddle::before,
     section.points .contents .moddle::after{
         display: none;
+    }
+    
+    section.banner-with-bg .content{
+        margin-left: 0px;
     }
 }
     
