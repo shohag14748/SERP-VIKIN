@@ -36,8 +36,10 @@ body{overflow-x: hidden;}
     background: #aeaeae;
     bottom: 0;
 }
-
-
+.page-width{
+    max-width: 768px;
+    margin: auto;
+}
 
 .button{
     display: flex;
@@ -581,7 +583,7 @@ section.banner-with-text .content{
 }
 section.banner-with-text .content h1{
     margin: 0;
-    padding-right: 20px;
+    padding-right: 15px;
 }
     
 
@@ -590,46 +592,120 @@ section.banner-with-text .content h1{
 section.features{
     padding: 50px 0;
 }
-section.features .features-width{
-    max-width: 768px;
-    margin: auto;
-}
 section.features .content{
-    padding: 35px;
+    padding: 36px;
     border: 1px solid #634297;
 }
 section.features .content img{
     height: 50px;
     margin: auto;
     display: block;
+    margin-bottom: 25px;
 }
 section.features .content h2{
     text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+section.features .content h2::before{
+    content: '';
+    width: 80%;
+    max-width: 120px;
+    height: 2px;
+    background: #634297;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%);
 }
 section.features .content ul{
     list-style: none;
+    padding-top: 25px;
+    position: relative;
+    min-height: 150px;
+    margin-bottom: 25px;
 }
+
 section.features .content li{
     font-size: 14px;
-    padding-left: 12px;
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 17px;
 }
-section.features .content li::before{
-    content: '-';
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    
+section.features .content li span{
+    display: block;
+    margin-right: 5px;
 }
 section.features .content .button a{
     padding: 5px 15px;
     font-size: 14px;
 }
 
+@media (max-width:991px){
+    section.features .content{
+        padding: 30px;
+    }
+}
+@media (max-width:768px){
+    section.features .content{
+        padding: 30px;
+        width: 200px;
+        margin: auto;
+    }
+    section.features .content ul{
+        min-height: 10px;
+    }
+}
 
 
 
+section.about-us-details{
+    padding-top: 50px
+}
+section.about-us-details .content{
+    position: relative;
+}
+section.about-us-details .content .head{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+section.about-us-details .content .head img{
+    max-height: 50px;
+    max-width: 50px;
+    margin-right: 20px;
+}
+section.about-us-details .content .text p{
+    font-size: 14px;
+}
+@media (min-width:768px){
+    section.about-us-details .content.left p:first-child{
+        max-width: 260px;
+    }
+    section.about-us-details .content.left::after{
+        content: '';
+        width: 2px;
+        height: 100px;
+        background: #634297;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+}
+@media (max-width:768px){
+    section.about-us-details .content .head{
+        justify-content: center;
+        margin-left: 0;
+    }
+}
 
 
 
