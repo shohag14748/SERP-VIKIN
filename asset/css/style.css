@@ -1069,7 +1069,9 @@ table tfoot tr td:nth-child(2){
     }
 }
 
-
+.bottom-text p a{
+    color: #634297;
+}
 
 
 
