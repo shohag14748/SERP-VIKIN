@@ -6,66 +6,100 @@ Author: SERP VIKING
 */
 
 /*------------------------------------------*/
-        /*  General  */
+/*  General  */
 /*------------------------------------------*/
 
-*{
-    margin: 0;padding: 0;outline: 0;
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
     font-family: 'Roboto', sans-serif;
 }
-h1{font-size: 30px;font-weight: 400;}
-h2{font-size: 18px;letter-spacing: .5px;font-weight: 400;}
-p{font-size: 12px;}
-.btn{border: 0; font-size: 14px;}
-a:hover{text-decoration: none;}
-body{overflow-x: hidden;}
-.title{
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 18px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 12px;
+}
+
+.btn {
+    border: 0;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.title {
     display: flex;
     justify-content: center;
 }
-.title h2{
+
+.title h2 {
     margin-bottom: 40px;
     position: relative;
     color: #2c2c2c;
     font-weight: 400;
-}   
-.title h2::before{
+}
+
+.title h2::before {
     content: '';
-    width: 100%;height: 1px;
+    width: 100%;
+    height: 1px;
     position: absolute;
     background: #aeaeae;
     bottom: 0;
 }
-.page-width{
+
+.page-width {
     max-width: 768px;
     margin: auto;
 }
 
-.button{
+.button {
     display: flex;
     justify-content: center;
 }
-.button a{
+
+.button button,
+.button a {
     display: block;
     background: #634296;
     color: #fff;
     border: 1px solid #634296;
     border-radius: 3px;
     transition: .5s;
-    
+
 }
-.button a:hover{
+
+.button a:hover {
     background: #fff;
     color: #2c2c2c;
 }
-.button.white a{
+
+.button.white a {
     font-size: 12px;
     font-weight: 500;
     color: #2c2c2c;
     background: #fff;
     border: 1px solid #fff;
 }
-.button.white a:hover{
+
+.button.white a:hover {
     background: #634296 !important;
     color: #fff;
     border: 1px solid #fff;
@@ -73,63 +107,72 @@ body{overflow-x: hidden;}
 }
 
 /*------------------------------------------*/
-        /*  Header  */
+/*  Header  */
 /*------------------------------------------*/
 
-.header{
+.header {
     background: #eeeeee;
     padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 99999;
 }
-.header .nav-link{
+
+.header .nav-link {
     font-size: 14px;
     color: #634296 !important;
 }
+
 .header .nav-link:hover,
-.header .nav-item.active .nav-link{
+.header .nav-item.active .nav-link {
     color: #aeaeae !important;
 }
-.button .login{
+
+.button .login {
     color: #634296;
     background-color: #eeeeee;
     border-color: #eeeeee;
 }
-.button .login:hover{
+
+.button .login:hover {
     background: #634296;
     color: #fff;
     border: 1px solid #634296;
 }
 
 /*------------------------------------------*/
-        /*  Banner  */
+/*  Banner  */
 /*------------------------------------------*/
 
-.banner{
+.banner {
     position: relative;
     overflow: hidden;
 }
-.banner img{
-    width: 100%; 
+
+.banner img {
+    width: 100%;
 }
-.banner .content{
+
+.banner .content {
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
 }
-.banner .content{
+
+.banner .content {
     color: #fff;
     padding-left: 40px;
     box-sizing: border-box;
     max-width: 90%
 }
-.banner .content h1{
+
+.banner .content h1 {
     font-weight: 400;
     letter-spacing: 2px;
 }
-.banner .content::before{
+
+.banner .content::before {
     content: '';
     width: 4px;
     height: 120%;
@@ -139,7 +182,8 @@ body{overflow-x: hidden;}
     top: -10%;
     top: -10%;
 }
-.banner .content h2{
+
+.banner .content h2 {
     font-weight: 300;
     margin-bottom: 0;
     margin-top: 20px;
@@ -147,65 +191,75 @@ body{overflow-x: hidden;}
 }
 
 /*------------------------------------------*/
-        /*  Icon banner  */
+/*  Icon banner  */
 /*------------------------------------------*/
 
-.iconbanner{
+.iconbanner {
     padding: 20px 0 10px;
     text-align: center;
     border-bottom: 2px solid #2c2c2c;
 }
-.iconbanner .container{
+
+.iconbanner .container {
     max-width: 800px;
 }
-.iconbanner .content img{
+
+.iconbanner .content img {
     height: 55px;
     display: block;
     margin: auto;
 }
-.iconbanner .content h2{
+
+.iconbanner .content h2 {
     max-width: 150px;
     margin: auto;
     margin-top: 10px;
     font-weight: 400;
     color: #2c2c2c;
 }
-    
-   
+
+
 /*------------------------------------------*/
-        /*  Tracking    */
+/*  Tracking    */
 /*------------------------------------------*/
 
-.tracking{
+.tracking {
     padding: 50px 0;
 }
-.tracking .wrap{
+
+.tracking .wrap {
     max-width: 960px;
     margin: auto;
 }
-.tracking img{
+
+.tracking img {
     width: 100%;
 }
-.tracking .content{
+
+.tracking .content {
     background: #634296;
     padding: 40px 15px;
     height: 100%;
 }
-.tracking .content h1{
+
+.tracking .content h1 {
     margin-top: 10px;
     color: #fff;
     font-weight: 400;
     letter-spacing: 1px;
 }
-.tracking .content p{
+
+.tracking .content p {
     max-width: 400px;
     color: #fff;
     margin-top: 20px
 }
-.tracking .content .button.white a{
+
+.tracking .content .button.white a {
     padding: 12px 30px;
 }
-.tracking .foot{
+
+.tracking .foot {
     font-size: 14px;
     color: #aeaeae;
     max-width: 600px;
@@ -216,92 +270,104 @@ body{overflow-x: hidden;}
 
 
 /*------------------------------------------*/
-        /* Testimonials */
+/* Testimonials */
 /*------------------------------------------*/
-    
-.testimonials{
+
+.testimonials {
     margin-bottom: 50px;
 }
 
-.testimonials .col-sm-6{
+.testimonials .col-sm-6 {
     padding: 7px;
 }
-.testimonials .content{
+
+.testimonials .content {
     padding: 50px 50px 30px;
     border: 2px solid #aeaeae;
-    
+
 }
-.testimonials .content p{
+
+.testimonials .content p {
     font-size: 14px;
     color: #aeaeae;
 }
-.testimonials .content .details{
+
+.testimonials .content .details {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.testimonials .content .details img{
+
+.testimonials .content .details img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
-.testimonials .content .details h2{
+
+.testimonials .content .details h2 {
     margin-top: 10px;
     margin-left: 30px;
-    color:  #aeaeae;
+    color: #aeaeae;
     font-weight: 400;
 }
 
 /*------------------------------------------*/
-        /* Blog */
+/* Blog */
 /*------------------------------------------*/
 
-.blog{
+.blog {
     margin-bottom: 50px;
 }
-.blog img{
+
+.blog img {
     width: 100%;
 }
-.blog .text{
+
+.blog .text {
     max-width: 300px;
     margin: auto;
     color: #2c2c2c;
-}  
-.blog .text h2{
+}
+
+.blog .text h2 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
 
 /*------------------------------------------*/
-        /* Newsletter */
+/* Newsletter */
 /*------------------------------------------*/
-    
-.newsletter{
+
+.newsletter {
     background: #634296;
     padding: 40px 0;
 }
-.newsletter .content{
+
+.newsletter .content {
     max-width: 500px;
     margin: auto;
 }
-.newsletter h2{
+
+.newsletter h2 {
     text-align: center;
     color: #fff;
     font-weight: 400;
     margin-bottom: 15px;
 }
-.newsletter p{
+
+.newsletter p {
     text-align: center;
     font-size: 14px;
     color: #fff;
 }
 
-.newsletter-input{
+.newsletter-input {
     margin-top: 25px;
     position: relative;
 }
-.newsletter-input input{
+
+.newsletter-input input {
     width: 100%;
     border: none;
     padding: 7px;
@@ -309,7 +375,8 @@ body{overflow-x: hidden;}
     padding-right: 30px;
     border-radius: 30px;
 }
-.newsletter-input button{
+
+.newsletter-input button {
     position: absolute;
     right: 10px;
     width: 30px;
@@ -322,81 +389,94 @@ body{overflow-x: hidden;}
     font-size: 20px;
     transition: .5s;
 }
-.newsletter-input button:hover{
+
+.newsletter-input button:hover {
     background-color: #634296;
     color: #fff;
 }
-.newsletter-input button::placeholder{
+
+.newsletter-input button::placeholder {
     color: #e9e9e9;
 }
-.newsletter .condition{
+
+.newsletter .condition {
     margin-top: 10px;
     margin-left: 20px
 }
-.newsletter .condition input{
+
+.newsletter .condition input {
     margin-top: 5px;
 }
-.newsletter .condition label{
+
+.newsletter .condition label {
     color: #fff;
     margin-left: 10px;
     font-size: 14px;
 }
-.newsletter{
+
+.newsletter {
     border-bottom: 2px solid #634297;
 }
 
 
 /*------------------------------------------*/
-        /* Footer */
+/* Footer */
 /*------------------------------------------*/
 
-footer{
+footer {
     padding-top: 60px;
     padding-bottom: 20px;
     background: #eeeeee;
 }
-footer .content{
+
+footer .content {
     max-width: 600px;
     position: relative;
     left: 50%;
     transform: translate(-40%);
     margin-bottom: 10px;
 }
-footer .content h2{
+
+footer .content h2 {
     font-weight: 400;
 }
-footer .content ul{
+
+footer .content ul {
     list-style: none;
 }
-footer .content ul a{
+
+footer .content ul a {
     color: #2c2c2c;
     font-size: 12px;
     position: relative;
     transition: .3s;
     left: 0;
 }
-footer .content ul a:hover{
+
+footer .content ul a:hover {
     color: #634296;
     left: 7px;
 }
 
 /*------------------------------------------*/
-        /*  Responsive   */
+/*  Responsive   */
 /*------------------------------------------*/
 
-@media (min-width:991px){
-    .tracking .content{
+@media (min-width:991px) {
+    .tracking .content {
         padding: 40px;
     }
-    .tracking .content h1{
+
+    .tracking .content h1 {
         margin-top: 30px;
     }
-    .tracking .content p{
+
+    .tracking .content p {
         margin-top: 40px;
         margin-bottom: 50px;
         font-size: 14px;
     }
-}  
+}
 
 
 
@@ -404,77 +484,84 @@ footer .content ul a:hover{
 
 
 /*------------------------------------------*/
-        /*  Optimisation Page   */
+/*  Optimisation Page   */
 /*------------------------------------------*/
 
 
 
 /*------------------------------------------*/
-        /*  Optimisation Banner   */
+/*  Optimisation Banner   */
 /*------------------------------------------*/
 
 
 
-section.banner-with-bg{
+section.banner-with-bg {
     position: relative;
     overflow: hidden;
 }
-section.banner-with-bg img{
-    width: 100%; 
+
+section.banner-with-bg img {
+    width: 100%;
 }
-section.banner-with-bg .content{
+
+section.banner-with-bg .content {
     position: absolute;
     max-width: 700px;
     width: 80%;
     top: 50%;
-/*    left: 15%;*/
+    /*    left: 15%;*/
     margin-left: 50px;
     transform: translateY(-50%);
     z-index: 9;
     color: #fff;
 }
-section.banner-with-bg .overlay{
+
+section.banner-with-bg .overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 8;
 }
-section.banner-with-bg .content h1{
+
+section.banner-with-bg .content h1 {
     font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 30px;
 }
-section.banner-with-bg .content h2{
+
+section.banner-with-bg .content h2 {
     max-width: 500px;
     font-weight: 400;
 }
 
-@media (max-width:500px){
-    section.banner-with-bg .content h1{
+@media (max-width:500px) {
+    section.banner-with-bg .content h1 {
         margin-bottom: 10px;
     }
-    
+
 }
 
 
 /*------------------------------------------*/
-        /*  Optimisation Points   */
+/*  Optimisation Points   */
 /*------------------------------------------*/
 
 
-section.points{
+section.points {
     padding: 50px 0 40px;
     border-bottom: 2px solid #634297;
 }
-section.points h2{
+
+section.points h2 {
     padding-left: 20px;
     position: relative;
     font-weight: 400;
 }
-section.points h2::before{
+
+section.points h2::before {
     content: '';
     width: 8px;
     height: 8px;
@@ -484,14 +571,17 @@ section.points h2::before{
     border-radius: 50%;
     top: 6px;
 }
-section.points .contents{
+
+section.points .contents {
     max-width: 768px;
     margin: auto;
 }
-section.points .contents .moddle{
+
+section.points .contents .moddle {
     position: relative;
 }
-section.points .contents .moddle::before{
+
+section.points .contents .moddle::before {
     content: '';
     height: 30px;
     width: 1px;
@@ -499,7 +589,8 @@ section.points .contents .moddle::before{
     background: #634297;
     left: 0px;
 }
-section.points .contents .moddle::after{
+
+section.points .contents .moddle::after {
     content: '';
     height: 30px;
     width: 1px;
@@ -511,40 +602,45 @@ section.points .contents .moddle::after{
 
 
 
-@media (max-width:768px){
+@media (max-width:768px) {
+
     section.points .contents .moddle::before,
-    section.points .contents .moddle::after{
+    section.points .contents .moddle::after {
         display: none;
     }
-    
-    section.banner-with-bg .content{
+
+    section.banner-with-bg .content {
         margin-left: 15px;
     }
 }
-    
 
-section.details .single-item{
+
+section.details .single-item {
     max-width: 768px;
     margin: auto;
     padding: 50px 0;
 }
-section.details .single-item img{
+
+section.details .single-item img {
     margin: auto;
     display: block;
     max-height: 150px;
 }
-section.details .single-item h2{
+
+section.details .single-item h2 {
     font-weight: 400;
 }
-section.details .single-item p{
+
+section.details .single-item p {
     font-weight: 400;
     font-size: 14px;
 }
-section.details .single-item.middle{
+
+section.details .single-item.middle {
     position: relative;
 }
-    
-section.details .single-item.middle::before{
+
+section.details .single-item.middle::before {
     content: '';
     height: 2px;
     width: 200px;
@@ -554,7 +650,8 @@ section.details .single-item.middle::before{
     left: 50%;
     transform: translate(-50%);
 }
-section.details .single-item.middle::after{
+
+section.details .single-item.middle::after {
     content: '';
     height: 2px;
     width: 200px;
@@ -571,38 +668,43 @@ section.details .single-item.middle::after{
 
 
 
-section.banner-with-text{
+section.banner-with-text {
     padding: 60px 0;
     background: #634297;
     color: #fff;
     text-align: right;
 }
-section.banner-with-text .content{
+
+section.banner-with-text .content {
     max-width: 768px;
     margin: auto;
 }
-section.banner-with-text .content h1{
+
+section.banner-with-text .content h1 {
     margin: 0;
     padding-right: 15px;
 }
-    
 
 
 
-section.features{
+
+section.features {
     padding: 50px 0;
 }
-section.features .content{
+
+section.features .content {
     padding: 36px;
     border: 1px solid #634297;
 }
-section.features .content img{
+
+section.features .content img {
     height: 50px;
     margin: auto;
     display: block;
     margin-bottom: 25px;
 }
-section.features .content h2{
+
+section.features .content h2 {
     text-align: center;
     height: 40px;
     display: flex;
@@ -611,7 +713,8 @@ section.features .content h2{
     margin-bottom: 25px;
     position: relative;
 }
-section.features .content h2::before{
+
+section.features .content h2::before {
     content: '';
     width: 80%;
     max-width: 120px;
@@ -622,7 +725,8 @@ section.features .content h2::before{
     left: 50%;
     transform: translate(-50%);
 }
-section.features .content ul{
+
+section.features .content ul {
     list-style: none;
     padding-top: 25px;
     position: relative;
@@ -630,78 +734,106 @@ section.features .content ul{
     margin-bottom: 25px;
 }
 
-section.features .content li{
+section.features .content li {
     font-size: 14px;
     display: flex;
     justify-content: flex-start;
     line-height: 17px;
 }
-section.features .content li span{
+
+section.features .content li span {
     display: block;
     margin-right: 5px;
 }
-section.features .content .button a{
+
+section.features .content .button a {
     padding: 5px 15px;
     font-size: 14px;
 }
 
-@media (max-width:991px){
-    section.features .content{
+@media (max-width:991px) {
+    section.features .content {
         padding: 30px;
     }
 }
-@media (max-width:768px){
-    section.features .content{
+
+@media (max-width:768px) {
+    section.features .content {
         padding: 30px;
         width: 200px;
         margin: auto;
     }
-    section.features .content ul{
+
+    section.features .content ul {
         min-height: 10px;
     }
 }
 
 
 
-section.about-us-details{
+section.about-us-details {
     padding-top: 50px
 }
-section.about-us-details .content{
+
+section.about-us-details .content {
     position: relative;
 }
-section.about-us-details .content .head{
+
+section.about-us-details .content .head {
     display: flex;
     align-items: center;
     height: 50px;
     overflow: hidden;
     margin-bottom: 25px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
-section.about-us-details .content .head img{
+
+section.about-us-details .content .head img {
     max-height: 50px;
     max-width: 50px;
     margin-right: 20px;
 }
-section.about-us-details .content .text p{
+
+section.about-us-details .content .text p {
     font-size: 14px;
+    margin-bottom: 22px;
 }
-@media (min-width:768px){
-    section.about-us-details .content.left p:first-child{
-        max-width: 260px;
-    }
-    section.about-us-details .content.left::after{
+
+@media (min-width:768px) {
+    section.about-us-details .content.left::after {
         content: '';
         width: 2px;
         height: 100px;
         background: #634297;
         position: absolute;
-        right: 0;
+        right: -14px;
         top: 50%;
         transform: translateY(-40%);
     }
+    section.contacts-info .content.middle::after {
+        content: '';
+        width: 2px;
+        height: 40px;
+        background: #634297;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-80%);
+    }
+    section.contacts-info .content.middle::before {
+        content: '';
+        width: 2px;
+        height: 40px;
+        background: #634297;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-80%);
+    }
 }
-@media (max-width:768px){
-    section.about-us-details .content .head{
+
+@media (max-width:768px) {
+    section.about-us-details .content .head {
         justify-content: center;
         margin-left: 0;
     }
@@ -709,31 +841,94 @@ section.about-us-details .content .text p{
 
 
 
+section.contacts-info{
+    padding: 50px 0;
+}
+section.contacts-info .content{
+    max-width: 160px;
+    margin: auto
+}
+section.contacts-info .content img{
+    max-width: 35px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+section.contacts-info .content h2{
+    text-align: center;
+    margin-bottom: 30px
+}
+section.contacts-info .content p{
+    font-size: 14px;
+}
+section.contacts-info .content .button a{
+    padding: 5px 25px;
+    font-size: 14px;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section.contact-form{
+    margin-bottom: 50px;
+}
+section.contact-form .contact-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+section.contact-form .contact-title img{
+    width: 60px;
+    margin-right: 25px;
+}
+section.contact-form form{}
+section.contact-form form label{
+    display: block;
+    font-size: 14px;
+    color: #2c2c2c;
+    margin-bottom: 5px;
+}
+section.contact-form form input{
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #634297;
+    margin-bottom: 20px;
+    color: #aeaeae;
+    padding-top: 5px;
+}
+section.contact-form form input::placeholder,
+section.contact-form form input:focus{
+    color: #aeaeae;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+section.contact-form form textarea{
+    border: 2px solid #634297;
+    width: 100%;
+    padding: 10px;
     
+}
+section.contact-form form .button{
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+section.contact-form form button{
+    padding: 5px 30px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
