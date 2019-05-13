@@ -929,6 +929,161 @@ section.contact-form form button{
 
 
 
+.pricing .buttons{
+    display: flex;
+    justify-content: flex-start;
+}
+.pricing .button-group{
+    display: flex;
+    border: 2px solid #634297;
+    border-radius: 3px;
+}
+.button-group a{
+    font-size: 16px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.button-group a:first-child{
+    padding: 10px 15px;
+    background: #634297;
+    color: #fff;
+}
+.button-group a:last-child{
+    color: #634297;
+}
+.button-group a span{
+    display: block;
+    font-size: 10px;
+    line-height: 10px
+}
+
+
+
+table{
+    width: 100%;
+    min-width: 708px;
+}
+table thead tr{}
+table thead tr th{
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+table thead tr th img{
+    display: block;
+    margin: auto;
+}
+table thead tr th h2{
+    text-align: center;
+    margin: 10px 0 0;
+}
+table thead tr th:nth-child(2) img{
+    width: 40px;
+}
+table thead tr th:nth-child(3) h2{
+    color:  #634297;
+}
+table thead tr th:nth-child(3) img{
+    width: 40px;
+}
+table thead tr th:nth-child(4) img{
+    width: 55px;
+}
+table thead tr th:nth-child(5) img{
+    width: 70px;
+}
+
+table p span{font-size: 10px;}
+table thead tr th{
+    border: none;
+}
+table tbody tr td{
+    border-top: 1px solid #634297;
+    border-bottom: 1px solid #634297;
+    border-left: 2px solid #634297;
+    border-right: 2px solid #634297;
+    padding: 15px 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+table tbody tr:first-child td{
+    border-top: 0;
+    
+}
+table tbody tr td:first-child{
+    border-left: 0;
+    text-align: left;
+    padding-left: 0;
+    max-width: 160px;
+}
+
+table tbody tr td:last-child{
+    border-right: 0
+}
+
+table tbody tr td img{
+    display: block;
+    margin: auto;
+}
+table tbody tr td p{
+    margin: 0;
+    margin: 0;
+}
+table tbody tr td p img{
+    display: inline-block;
+    width: 15px;
+    margin-bottom: 10px;
+}
+table tbody tr td img{
+    width: 25px;
+}
+
+table tfoot tr td h2{
+    width: 70px;
+    margin: 10px auto;
+    font-size: 16px;
+}
+table tfoot tr td .button{
+    display: block;
+}
+table tfoot tr td a{
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px 15px;
+    font-size: 13px;
+}
+table tfoot tr td p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+table tbody tr td:nth-child(2),
+table tfoot tr td:nth-child(2){
+    background: rgba(99,66,150,.23);
+}
+
+
+
+@media (max-width:768px) {
+    .table-content{
+        overflow-x: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
