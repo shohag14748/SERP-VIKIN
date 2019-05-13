@@ -13,8 +13,8 @@ Author: SERP VIKING
     margin: 0;padding: 0;outline: 0;
     font-family: 'Roboto', sans-serif;
 }
-h1{font-size: 30px;}
-h2{font-size: 18px;letter-spacing: .5px}
+h1{font-size: 30px;font-weight: 400;}
+h2{font-size: 18px;letter-spacing: .5px;font-weight: 400;}
 p{font-size: 12px;}
 .btn{border: 0; font-size: 14px;}
 a:hover{text-decoration: none;}
@@ -527,9 +527,9 @@ section.details .single-item{
     padding: 50px 0;
 }
 section.details .single-item img{
-    width: 90%;
     margin: auto;
     display: block;
+    max-height: 150px;
 }
 section.details .single-item h2{
     font-weight: 400;
@@ -545,7 +545,7 @@ section.details .single-item.middle{
 section.details .single-item.middle::before{
     content: '';
     height: 2px;
-    width: 250px;
+    width: 200px;
     position: absolute;
     background: #634297;
     top: -1px;
@@ -555,7 +555,7 @@ section.details .single-item.middle::before{
 section.details .single-item.middle::after{
     content: '';
     height: 2px;
-    width: 250px;
+    width: 200px;
     position: absolute;
     background: #634297;
     bottom: -1px;
@@ -564,5 +564,100 @@ section.details .single-item.middle::after{
 }
 
 
+
+
+
+
+
+section.banner-with-text{
+    padding: 60px 0;
+    background: #634297;
+    color: #fff;
+    text-align: right;
+}
+section.banner-with-text .content{
+    max-width: 768px;
+    margin: auto;
+}
+section.banner-with-text .content h1{
+    margin: 0;
+    padding-right: 20px;
+}
     
+
+
+
+section.features{
+    padding: 50px 0;
+}
+section.features .features-width{
+    max-width: 768px;
+    margin: auto;
+}
+section.features .content{
+    padding: 35px;
+    border: 1px solid #634297;
+}
+section.features .content img{
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+section.features .content h2{
+    text-align: center;
+}
+section.features .content ul{
+    list-style: none;
+}
+section.features .content li{
+    font-size: 14px;
+    padding-left: 12px;
+    position: relative;
+    text-align: center;
+}
+section.features .content li::before{
+    content: '-';
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    
+}
+section.features .content .button a{
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
