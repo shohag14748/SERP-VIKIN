@@ -970,16 +970,18 @@ table thead tr th{
 }
 table thead tr th img{
     display: block;
-    margin: auto;
+    margin: 0 auto 10px;
 }
-table thead tr th h2{
+table thead tr th{
     text-align: center;
-    margin: 10px 0 0;
+    font-size: 18px;
+    letter-spacing: .5px;
+    font-weight: 400;
 }
 table thead tr th:nth-child(2) img{
     width: 40px;
 }
-table thead tr th:nth-child(3) h2{
+table thead tr th:nth-child(3){
     color:  #634297;
 }
 table thead tr th:nth-child(3) img{
