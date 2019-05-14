@@ -458,35 +458,6 @@ footer .content ul a:hover {
     left: 7px;
 }
 
-/*------------------------------------------*/
-/*  Responsive   */
-/*------------------------------------------*/
-
-@media (min-width:991px) {
-    .tracking .content {
-        padding: 40px;
-    }
-
-    .tracking .content h1 {
-        margin-top: 30px;
-    }
-
-    .tracking .content p {
-        margin-top: 40px;
-        margin-bottom: 50px;
-        font-size: 14px;
-    }
-}
-
-
-
-
-
-
-/*------------------------------------------*/
-/*  Optimisation Page   */
-/*------------------------------------------*/
-
 
 
 /*------------------------------------------*/
@@ -537,12 +508,7 @@ section.banner-with-bg .content h2 {
     font-weight: 400;
 }
 
-@media (max-width:500px) {
-    section.banner-with-bg .content h1 {
-        margin-bottom: 10px;
-    }
 
-}
 
 
 /*------------------------------------------*/
@@ -602,17 +568,11 @@ section.points .contents .moddle::after {
 
 
 
-@media (max-width:768px) {
 
-    section.points .contents .moddle::before,
-    section.points .contents .moddle::after {
-        display: none;
-    }
 
-    section.banner-with-bg .content {
-        margin-left: 15px;
-    }
-}
+/*------------------------------------------*/
+/*  details  */
+/*------------------------------------------*/
 
 
 section.details .single-item {
@@ -666,6 +626,10 @@ section.details .single-item.middle::after {
 
 
 
+/*------------------------------------------*/
+/*  Banner with text  */
+/*------------------------------------------*/
+
 
 
 section.banner-with-text {
@@ -685,6 +649,11 @@ section.banner-with-text .content h1 {
     padding-right: 15px;
 }
 
+
+
+/*------------------------------------------*/
+/*  Features  */
+/*------------------------------------------*/
 
 
 
@@ -751,23 +720,14 @@ section.features .content .button a {
     font-size: 14px;
 }
 
-@media (max-width:991px) {
-    section.features .content {
-        padding: 30px;
-    }
-}
 
-@media (max-width:768px) {
-    section.features .content {
-        padding: 30px;
-        width: 200px;
-        margin: auto;
-    }
 
-    section.features .content ul {
-        min-height: 10px;
-    }
-}
+
+
+
+/*------------------------------------------*/
+/*  About Us  */
+/*------------------------------------------*/
 
 
 
@@ -799,45 +759,13 @@ section.about-us-details .content .text p {
     margin-bottom: 22px;
 }
 
-@media (min-width:768px) {
-    section.about-us-details .content.left::after {
-        content: '';
-        width: 2px;
-        height: 100px;
-        background: #634297;
-        position: absolute;
-        right: -14px;
-        top: 50%;
-        transform: translateY(-40%);
-    }
-    section.contacts-info .content.middle::after {
-        content: '';
-        width: 2px;
-        height: 40px;
-        background: #634297;
-        position: absolute;
-        right: 0px;
-        top: 50%;
-        transform: translateY(-80%);
-    }
-    section.contacts-info .content.middle::before {
-        content: '';
-        width: 2px;
-        height: 40px;
-        background: #634297;
-        position: absolute;
-        left: 0px;
-        top: 50%;
-        transform: translateY(-80%);
-    }
-}
 
-@media (max-width:768px) {
-    section.about-us-details .content .head {
-        justify-content: center;
-        margin-left: 0;
-    }
-}
+
+
+
+/*------------------------------------------*/
+/*  Contact Us info  */
+/*------------------------------------------*/
 
 
 
@@ -868,6 +796,9 @@ section.contacts-info .content .button a{
 
 
 
+/*------------------------------------------*/
+/*  Contact Us Form  */
+/*------------------------------------------*/
 
 
 
@@ -925,6 +856,12 @@ section.contact-form form button{
 }
 
 
+
+
+
+/*------------------------------------------*/
+/*  pricing  */
+/*------------------------------------------*/
 
 
 
@@ -1080,19 +1017,15 @@ section.pricing table tfoot tr td:nth-child(3){
     background: rgba(99,66,150,.23);
 }
 
-
-
-@media (max-width:768px) {
-    section.pricing .table-content{
-        overflow-x: auto;
-    }
-}
-
 .bottom-text p a{
     color: #634297;
 }
 
 
+
+/*------------------------------------------*/
+/*  Ranking  */
+/*------------------------------------------*/
 
 
 label{font-size: 14px;margin: 0;}
@@ -1153,6 +1086,10 @@ section.chart-detail .chart-width{
     margin: auto;
     padding: 30px 0 50px;
 }
+
+/*------------------------------------------*/
+/*  Ranking Table  */
+/*------------------------------------------*/
 
 
 .dataTables_length,.dataTables_filter,.dataTables_info, th::before,th::after{
@@ -1233,14 +1170,12 @@ section.chart-detail .chart-width{
 }
 
 
-@media (max-width:991px) {
-    section.chart-detail .data-table{
-        overflow-x: auto;
-    }
-    section.chart-detail .data-table table{
-        width: 900px;
-    }
-}
+
+
+/*------------------------------------------*/
+/*  Ranking Form  */
+/*------------------------------------------*/
+
 
 .form input{
     border: 2px solid #634297;
@@ -1307,10 +1242,6 @@ section.chart-detail .chart-width{
 .middle .input-group input{
     text-align: center;
 }
-.middle .input-group select{
-    padding-right: 10px;
-    text-align: center !important;
-}
 .middle .input-group .col-md-4,
 .middle .input-group .col-md-8{
     padding: 0;
@@ -1318,20 +1249,6 @@ section.chart-detail .chart-width{
 .middle .input-group input{
     width: 100%;
 }
-
-@media (max-width:991px) {
-    .form .search{
-        width: auto;
-    }
-    .form .select{
-        width: 25%;
-    }
-    .form .inputs input{
-        width: 20%;
-    }
-}
-
-
 
 
 .notes{
@@ -1352,6 +1269,10 @@ section.chart-detail .chart-width{
 
 
 
+
+/*------------------------------------------*/
+/*  Ranking Chart  */
+/*------------------------------------------*/
 
 .chart-bottom{
     display: flex;
@@ -1439,6 +1360,116 @@ section.chart-detail .chart-width{
 
 
 
+
+
+/*------------------------------------------*/
+/*  Responsive   */
+/*------------------------------------------*/
+
+@media (min-width:991px) {
+    .tracking .content {
+        padding: 40px;
+    }
+
+    .tracking .content h1 {
+        margin-top: 30px;
+    }
+
+    .tracking .content p {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+}
+@media (max-width:991px) {
+    section.features .content {
+        padding: 30px;
+    }
+    section.chart-detail .data-table{
+        overflow-x: auto;
+    }
+    section.chart-detail .data-table table{
+        width: 900px;
+    }
+    .form .search{
+        width: auto;
+    }
+    .form .select{
+        width: 25%;
+    }
+    .form .inputs input{
+        width: 20%;
+    }
+}
+
+
+@media (min-width:768px) {
+    section.about-us-details .content.left::after {
+        content: '';
+        width: 2px;
+        height: 100px;
+        background: #634297;
+        position: absolute;
+        right: -14px;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+    section.contacts-info .content.middle::after {
+        content: '';
+        width: 2px;
+        height: 40px;
+        background: #634297;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-80%);
+    }
+    section.contacts-info .content.middle::before {
+        content: '';
+        width: 2px;
+        height: 40px;
+        background: #634297;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-80%);
+    }
+}
+
+@media (max-width:768px) {
+    section.points .contents .moddle::before,
+    section.points .contents .moddle::after {
+        display: none;
+    }
+
+    section.banner-with-bg .content {
+        margin-left: 15px;
+    }
+    section.features .content {
+        padding: 30px;
+        width: 200px;
+        margin: auto;
+    }
+
+    section.features .content ul {
+        min-height: 10px;
+    }
+    section.about-us-details .content .head {
+        justify-content: center;
+        margin-left: 0;
+    }
+    section.pricing .table-content{
+        overflow-x: auto;
+    }
+}
+
+
+@media (max-width:500px) {
+    section.banner-with-bg .content h1 {
+        margin-bottom: 10px;
+    }
+
+}
 
 
 
