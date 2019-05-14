@@ -20,6 +20,23 @@ $(document).ready(function(){
     $('#example').DataTable( {
         "lengthMenu": [[15, 50, -1], [15, 50, "All"]]
     } );
+    
+    
+     $("#project2").change(function(){
+        $('.equals').toggleClass('d-none')
+    });
+    
+    $('#date1').datepicker({
+            format: "dd-mm-yyyy",
+            autoclose: true,
+        }).datepicker("setDate",'now');
+        $('#date2').datepicker({
+            format: "dd-mm-yyyy",
+            autoclose: true,
+        }).datepicker("setDate",'now');
+
+    
+    
 });
 
 var canvas = document.getElementById("myChart");

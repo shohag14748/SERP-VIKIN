@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/datatables/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="asset/plugins/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
     <title>SERP VIKING</title>
 </head>
@@ -134,45 +135,52 @@
                                 <div class="select">
                                     <select name="project2" id="project2">
                                         <option value="0">Between</option>
-                                        <option value="2">Between 1</option>
-                                        <option value="3">Between 2</option>
+                                        <option value="2">Equals</option>
                                     </select>
                                 </div>
                                 <input type="text" placeholder="enter">
-                                <h2>&</h2>
-                                <input type="text" placeholder="enter">
+                                <h2 class="equals">&</h2>
+                                <input class="equals" type="text" placeholder="enter">
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-8 middle mb-3">
                             <div class="content">
                                 <div class="input-group row m-0 pb-3">
-                                    <label for="uk" class="col-md-4 align-self-center">Location:</label>
+                                    <label for="location" class="col-md-4 align-self-center">Location:</label>
                                     <div class="col-md-8">
-                                        <input type="text" placeholder="United Kingdom">
+                                        <select name="location" id="location">
+                                            <option value="0">United Kingdom</option>
+                                            <option value="2">United State</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="input-group row m-0 pb-3">
-                                    <label for="uk" class="col-md-4 align-self-center">Rank Device:</label>
+                                    <label for="rankDevice" class="col-md-4 align-self-center">Rank Device:</label>
                                     <div class="col-md-8">
-                                        <input type="text" placeholder="Mobile">
+                                        <select name="rankDevice" id="rankDevice">
+                                            <option value="0">Mobile</option>
+                                            <option value="2">Desktop</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="input-group row m-0">
-                                    <label for="uk" class="col-md-4 align-self-center">Competitor:</label>
+                                    <label for="competitor" class="col-md-4 align-self-center">Competitor:</label>
                                     <div class="col-md-8">
-                                        <input type="text" id="uk" placeholder="None">
+                                        <select name="competitor" id="competitor">
+                                            <option value="0">None</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-4 right mb-3">
                             <div class="input-group mb-3">
-                                <input type="text">
-                                <img src="asset/image/calander.png" alt="">
+                                <input type="text" id="date1" class="form-control">
+                                <label for="date1"><img src="asset/image/calander.png" alt=""></label>
                             </div>
                             <div class="input-group">
-                                <input type="text">
-                                <img src="asset/image/calander.png" alt="">
+                                <input type="text" id="date2" class="form-control">
+                                <label for="date2"><img src="asset/image/calander.png" alt=""></label>
                             </div>
                         </div>
                     </form>
@@ -855,11 +863,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="asset/js/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="asset/datatables/jquery.dataTables.min.js"></script>
-    <script src="asset/datatables/dataTables.bootstrap4.js"></script>
+    <script src="asset/plugins/bootstrap-datepicker.min.js"></script>
+    <script src="asset/plugins/jquery.dataTables.min.js"></script>
+    <script src="asset/plugins/dataTables.bootstrap4.js"></script>
+    <script src="asset/plugins/dataTables.bootstrap4.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>
     <script src="asset/js/main.js"></script>
-    
+
 </body>
 
 </html>

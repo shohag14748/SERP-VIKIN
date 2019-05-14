@@ -1113,7 +1113,7 @@ label{font-size: 14px;margin: 0;}
     pointer-events: none;
 }
 
-.select select{
+select{
     border: 2px solid #634297;
     border-radius: 3px;
     -webkit-appearance: none;
@@ -1205,7 +1205,8 @@ section.chart-detail .chart-width{
     color: #fff;
     background: #634297;
     padding: 10px 15px;
-    line-height: 15px
+    line-height: 15px;
+    text-align: center;
 }
 .data-table table tbody tr td{
     text-align: center;
@@ -1300,6 +1301,10 @@ section.chart-detail .chart-width{
 }
 .middle .input-group input{
     text-align: center;
+}
+.middle .input-group select{
+    padding-right: 10px;
+    text-align: center !important;
 }
 .middle .input-group .col-md-4,
 .middle .input-group .col-md-8{
@@ -1421,13 +1426,14 @@ section.chart-detail .chart-width{
     background-color: #ffa200;
 }
 
-
 .chart .chart-content{
     padding: 20px;
     border: 1px solid #aeaeae;
 }
 
-
+#myChart{
+    max-height: 300px;
+}
 
 
 
