@@ -1074,8 +1074,8 @@ table tfoot tr td p{
     margin: 0;
 }
 
-table tbody tr td:nth-child(2),
-table tfoot tr td:nth-child(2){
+table tbody tr td:nth-child(3),
+table tfoot tr td:nth-child(3){
     background: #634297;
     background: rgba(99,66,150,.23);
 }
