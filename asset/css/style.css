@@ -13,7 +13,7 @@ Author: SERP VIKING
     margin: 0;
     padding: 0;
     outline: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif ;
 }
 
 h1 {
@@ -959,46 +959,46 @@ section.contact-form form button{
 
 
 
-table{
+section.pricing table{
     width: 100%;
     min-width: 770px;
 }
 table thead tr{}
-table thead tr th{
+section.pricing table thead tr th{
     vertical-align: bottom;
     padding-bottom: 10px;
 }
-table thead tr th img{
+section.pricing table thead tr th img{
     display: block;
     margin: 0 auto 10px;
 }
-table thead tr th{
+section.pricing table thead tr th{
     text-align: center;
     font-size: 18px;
     letter-spacing: .5px;
     font-weight: 400;
 }
-table thead tr th:nth-child(2) img{
+section.pricing table thead tr th:nth-child(2) img{
     width: 40px;
 }
-table thead tr th:nth-child(3){
+section.pricing table thead tr th:nth-child(3){
     color:  #634297;
 }
-table thead tr th:nth-child(3) img{
+section.pricing table thead tr th:nth-child(3) img{
     width: 40px;
 }
-table thead tr th:nth-child(4) img{
+section.pricing table thead tr th:nth-child(4) img{
     width: 55px;
 }
-table thead tr th:nth-child(5) img{
+section.pricing table thead tr th:nth-child(5) img{
     width: 70px;
 }
 
-table p span{font-size: 10px;}
-table thead tr th{
+section.pricing table p span{font-size: 10px;}
+section.pricing table thead tr th{
     border: none;
 }
-table tbody tr td{
+section.pricing table tbody tr td{
     border-top: 1px solid #634297;
     border-bottom: 1px solid #634297;
     border-left: 2px solid #634297;
@@ -1007,75 +1007,75 @@ table tbody tr td{
     vertical-align: middle;
     text-align: center;
 }
-table tbody tr:first-child td{
+section.pricing table tbody tr:first-child td{
     border-top: 0;
     
 }
-table tbody tr td:first-child{
+section.pricing table tbody tr td:first-child{
     border-left: 0;
     text-align: left;
     padding-left: 0;
     max-width: 180px;
 }
 
-table tbody tr td:last-child{
+section.pricing table tbody tr td:last-child{
     border-right: 0
 }
 
-table tbody tr td img{
+section.pricing table tbody tr td img{
     display: block;
     margin: auto;
 }
-table tbody .price span{
+section.pricing table tbody .price span{
     display: none;
 }
-table tbody .price span.active{
+section.pricing table tbody .price span.active{
     display: block;
 }
-table tfoot .total h2 span{
+section.pricing table tfoot .total h2 span{
     display: none;
 }
-table tfoot .total h2 span.active{
+section.pricing table tfoot .total h2 span.active{
     display: inline-block;
 }
-table tbody tr td p{
+section.pricing table tbody tr td p{
     margin: 0;
     margin: 0;
     font-size: 14px;
 }
-table tbody tr td p img{
+section.pricing table tbody tr td p img{
     display: inline-block;
     width: 15px;
     margin-bottom: 10px;
 }
-table tbody tr td img{
+section.pricing table tbody tr td img{
     width: 25px;
 }
-table tfoot tr td{
+section.pricing table tfoot tr td{
     padding: 10px 0 5px;;
 }
-table tfoot tr td h2{
+section.pricing table tfoot tr td h2{
     margin: 10px auto;
     font-size: 16px;
     text-align: center;
     margin: 0;
 }
-table tfoot tr td .button{
+section.pricing table tfoot tr td .button{
     display: block;
 }
-table tfoot tr td a{
+section.pricing table tfoot tr td a{
     padding: 5px 10px;
     text-align: center;
     margin: 10px 15px;
     font-size: 13px;
 }
-table tfoot tr td p{
+section.pricing table tfoot tr td p{
     text-align: center;
     margin: 0;
 }
 
-table tbody tr td:nth-child(3),
-table tfoot tr td:nth-child(3){
+section.pricing table tbody tr td:nth-child(3),
+section.pricing table tfoot tr td:nth-child(3){
     background: #634297;
     background: rgba(99,66,150,.23);
 }
@@ -1083,7 +1083,7 @@ table tfoot tr td:nth-child(3){
 
 
 @media (max-width:768px) {
-    .table-content{
+    section.pricing .table-content{
         overflow-x: auto;
     }
 }
@@ -1095,7 +1095,339 @@ table tfoot tr td:nth-child(3){
 
 
 
+label{font-size: 14px;margin: 0;}
+.ranking-project label{margin-left: 10px;}
+.select{
+    position: relative;
+    display: flex;
+    max-width: 200px;
+}
+.select::after{
+    content: '\f0dd';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    color: #634297;
+    pointer-events: none;
+}
 
+.select select{
+    border: 2px solid #634297;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px 20px 5px 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+
+
+.ranking-top{
+    border-bottom: 2px solid #634297;
+    border-top: 2px solid #634297;
+}
+.ranking-top .options{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.ranking-top .options a{
+    color: #2c2c2c;
+}
+.ranking-top .options a.active,
+.ranking-top .options a:hover{
+    color: #634297;
+    text-decoration: underline;
+}
+
+
+
+
+section.chart-detail .chart-width{
+    max-width: 990px;
+    margin: auto;
+}
+
+
+.dataTables_length,.dataTables_filter,.dataTables_info, th::before,th::after{
+    display: none !important;
+}
+.paginate_button.previous.disabled{
+    display: none;
+}
+.paginate_button.page-item a,
+.paginate_button.page-item.active a{
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding:4px 5px;
+    font-size: 16px;
+    color: #634297;
+}
+.paginate_button.page-item.active a{
+    color: #aeaeae;
+}
+.paginate_button.page-item.previous a,
+.paginate_button.page-item.next a{
+    padding: 5px 20px;
+    margin: 0 5px;
+    color: #fff;
+    background: #634297;
+    border: 1px solid #634297;
+    border-radius: 3px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 14px;
+}
+.paginate_button.page-item.previous a:hover,
+.paginate_button.page-item.next a:hover{
+    background: #fff;
+    color: #634297;
+}
+
+
+.data-table table{
+    border-collapse: collapse;
+    border: 1px solid #aeaeae;
+}
+.data-table table tr th{
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 400;
+}
+.data-table table thead tr th{
+    font-size: 14px;
+    color: #fff;
+    background: #634297;
+    padding: 10px 15px;
+    line-height: 15px
+}
+.data-table table tbody tr td{
+    text-align: center;
+    padding: 10px;
+    width: 10%;
+    font-size: 14px;
+}
+.data-table table tbody tr td:first-child{
+    min-width: 150px;
+}
+.data-table table tr th,
+.data-table table tr td{
+    border: 1px solid #aeaeae;
+}
+.table-top p{
+    margin: 0;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+
+@media (max-width:991px) {
+    section.chart-detail .data-table{
+        overflow-x: auto;
+    }
+    section.chart-detail .data-table table{
+        width: 900px;
+    }
+}
+
+.form input{
+    border: 2px solid #634297;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 100%;
+    color: #2c2c2c;
+}
+.form input::placeholder{
+    color: #aeaeae;
+}
+.form .middle input::placeholder,
+.form .search input::placeholder{
+    color: #2c2c2c;
+}
+.form input:focus{
+    color: #2c2c2c;
+}
+.form .search{
+    margin-left: 34px;
+    width: 75%;
+}
+.form .search input{
+    padding-left: 30px;
+    background-image: url(../image/tag.png);
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: 5px center;
+}
+.form .inputs{
+    display: flex;
+    align-items: flex-start;
+}
+.form .inputs img{
+    width: 35px;
+    padding: 5px;
+}
+.form .inputs input{
+    width: 15%;
+}
+.form .inputs h2{
+    padding: 7px;
+    margin: 0;
+    text-decoration: underline
+}
+.form .inputs .select{
+    margin-right: 5px
+}
+.right .input-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: nowrap
+}
+.right .input-group img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.middle .input-group{
+    width: 100%;
+}
+.middle .input-group input{
+    text-align: center;
+}
+.middle .input-group .col-md-4,
+.middle .input-group .col-md-8{
+    padding: 0;
+}
+.middle .input-group input{
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .form .search{
+        width: auto;
+    }
+    .form .select{
+        width: 25%;
+    }
+    .form .inputs input{
+        width: 20%;
+    }
+}
+
+
+
+
+.notes{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.notes img{
+    height: 23px;
+    margin-right: 10px;
+}
+.notes .button a{
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-left: 10px;
+}
+
+
+
+
+.chart-bottom{
+    display: flex;
+    flex-flow: wrap;
+}
+.chart-bottom .tag{
+    padding: 5px 10px;
+    width: 150px;
+    margin: 5px 10px 5px 0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chart-bottom .tag {
+    font-size: 14px;
+}
+.chart-bottom .tag span {
+    display: block;
+    padding-left: 25px;
+    background-image: url(../image/tag.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 0 center;
+}
+.chart-bottom .tag i{
+    cursor: pointer;
+}
+.chart-bottom .tag.green{
+    background: #b3e87b;
+}
+.chart-bottom .tag.red{
+    background: #f87474;
+}
+
+
+.chart-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chart-top .left,
+.chart-top .right{
+    display: flex;
+    align-items: center;
+}
+.chart-top .left a{
+    color: #2c2c2c;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.chart-top .left a:hover,
+.chart-top .left a.active{
+    color: #634297;
+    text-decoration: underline;
+}
+.chart-top .right p{
+    padding: 10px 10px 10px 20px;
+    margin: 0;
+    margin-left: 10px;
+    position: relative;
+}
+.chart-top .right p::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.chart-top .right p:first-child::before{
+    background-color: #376593;
+}
+.chart-top .right p:last-child::before{
+    background-color: #ffa200;
+}
+
+.chart{
+    padding-top: 30px;
+}
+
+.chart .chart-content{
+    padding: 20px;
+    border: 1px solid #aeaeae;
+}
 
 
 

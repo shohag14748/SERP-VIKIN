@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="asset/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/datatables/dataTables.bootstrap4.css">
     <link rel="stylesheet" href="asset/css/style.css">
     <title>SERP VIKING</title>
 </head>
@@ -21,8 +22,20 @@
 
     <div class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="asset/image/logo.png" alt=""></a>
+                <form class="mr-auto ml-md-5 ml-3 ranking-project">
+                    <div class="form-group ">
+                        <label for="project">Project</label>
+                        <div class="select">
+                            <select name="project" id="project">
+                                <option value="0">Main site project</option>
+                                <option value="2">Main site project 2</option>
+                                <option value="3">Main site project 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,74 +65,748 @@
 
     <!-- Header end -->
 
-    <!-- Banner Start -->
+    <!-- ranking-top Start -->
 
-    <section class="banner-with-text">
+    <div class="ranking-top">
         <div class="container">
-            <div class="content">
-                <h1>Features</h1>
+            <div class="chart-width">
+                <div class="options">
+                    <a href="">Keyword Explorer</a>
+                    <a href="" class="active">Position Rankings</a>
+                    <a href="">Opportunity Planner</a>
+                    <a href="">On Page Optimiser</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ranking-top end -->
+
+
+    <!-- Data chart and table  Start -->
+
+    <section class="chart-detail">
+        <div class="container">
+            <div class="chart-width">
+                <div class="chart">
+                    <div class="chart-top">
+                        <div class="left">
+                            <a href="" class="active">Average Position</a>
+                            <a href="">Visibility</a>
+                        </div>
+                        <div class="right">
+                            <p>Desktop</p>
+                            <p>Mobile</p>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="chart-bottom">
+                        <div class="tag green"><span>Body</span><i class="fas fa-times"></i></div>
+                        <div class="tag green"><span>Body grow</span><i class="fas fa-times"></i></div>
+                        <div class="tag red"><span>Designer</span><i class="fas fa-times"></i></div>
+                    </div>
+                </div>
+
+                <div class="notes">
+                    <a href=""><img src="asset/image/download.png" alt=""></a>
+                    <a href=""><img src="asset/image/file.png" alt=""></a>
+                    <div class="button">
+                        <a href="">Add Note</a>
+                    </div>
+                </div>
+                <div class="form mt-3">
+                    <form class="row">
+                        <div class="col-lg-5 left mb-3">
+                            <div class="search mb-3">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <div class="inputs">
+                                <img src="asset/image/filter.png" alt="">
+                                <div class="select">
+                                    <select name="project1" id="project1">
+                                        <option value="0">Rank</option>
+                                        <option value="2">Rank 1</option>
+                                        <option value="3">Rank 2</option>
+                                    </select>
+                                </div>
+                                <div class="select">
+                                    <select name="project2" id="project2">
+                                        <option value="0">Between</option>
+                                        <option value="2">Between 1</option>
+                                        <option value="3">Between 2</option>
+                                    </select>
+                                </div>
+                                <input type="text" placeholder="enter">
+                                <h2>&</h2>
+                                <input type="text" placeholder="enter">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-8 middle mb-3">
+                            <div class="content">
+                                <div class="input-group row m-0 pb-3">
+                                    <label for="uk" class="col-md-4 align-self-center">Location:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="United Kingdom">
+                                    </div>
+                                </div>
+                                <div class="input-group row m-0 pb-3">
+                                    <label for="uk" class="col-md-4 align-self-center">Rank Device:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="Mobile">
+                                    </div>
+                                </div>
+                                <div class="input-group row m-0">
+                                    <label for="uk" class="col-md-4 align-self-center">Competitor:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" id="uk" placeholder="None">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 right mb-3">
+                            <div class="input-group mb-3">
+                                <input type="text">
+                                <img src="asset/image/calander.png" alt="">
+                            </div>
+                            <div class="input-group">
+                                <input type="text">
+                                <img src="asset/image/calander.png" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div class="table-top">
+                    <p>Last Updated: 20/01/2019</p>
+                </div>
+                <div class="data-table">
+                    <table id="example">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Tag</th>
+                                <th>Search Value</th>
+                                <th>Rank</th>
+                                <th>Change</th>
+                                <th>Score</th>
+                                <th>Landing Pages</th>
+                                <th>Competitor Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                            <tr>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                                <td>demo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Banner end -->
 
-
-    <!-- Details Start -->
-
-
-    <section class="features">
-        <div class="container">
-            <div class="row page-width">
-                <div class="col-md-4">
-                    <div class="content">
-                        <img src="asset/image/ranking.png" alt="">
-                        <h2>Rank Checker</h2>
-                        <ul>
-                            <li><span>-</span> Accurate Keyword Rank Checker.</li>
-                            <li><span>-</span> Daily Updates</li>
-                            <li><span>-</span> Google Mobile</li>
-                            <li><span>-</span> Google Desktop</li>
-                            <li><span>-</span> 6 International Territories </li>
-                        </ul>
-                        <div class="button">
-                            <a href="">Discover More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content mt-4 mt-md-0">
-                        <img src="asset/image/Revenue-Icon.png" alt="">
-                        <h2>Estimate Keyword Value</h2>
-                        <ul>
-                            <li><span>-</span> Individual Keyword Revenue Estimating</li>
-                            <li><span>-</span> Individual Keyword Clicks Estimating</li>
-                            <li><span>-</span> Prioritise Keyword Targeting</li>
-                        </ul>
-                        <div class="button">
-                            <a href="">Discover More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content mt-4 mt-md-0">
-                        <img src="asset/image/Click-Icon.png" alt="">
-                        <h2>On Page Optimisation</h2>
-                        <ul>
-                            <li><span>-</span> 13 On Page Element Checks</li>
-                            <li><span>-</span> Unlimited Keyword / Landing Page Tests</li>
-                        </ul>
-                        <div class="button">
-                            <a href="">Discover More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Details End -->
+    <!-- Data chart and table End -->
 
     <!-- Footer Start -->
 
@@ -167,7 +854,12 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="asset/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="asset/datatables/jquery.dataTables.min.js"></script>
+    <script src="asset/datatables/dataTables.bootstrap4.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/main.js"></script>
+    
 </body>
 
 </html>
