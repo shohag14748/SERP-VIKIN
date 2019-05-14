@@ -942,14 +942,14 @@ section.contact-form form button{
     font-size: 16px;
     padding: 5px 15px;
     text-align: center;
+    color: #634297;
 }
 .button-group a:first-child{
     padding: 10px 15px;
+}
+.button-group a.active{
     background: #634297;
     color: #fff;
-}
-.button-group a:last-child{
-    color: #634297;
 }
 .button-group a span{
     display: block;
@@ -961,7 +961,7 @@ section.contact-form form button{
 
 table{
     width: 100%;
-    min-width: 708px;
+    min-width: 770px;
 }
 table thead tr{}
 table thead tr th{
@@ -1015,7 +1015,7 @@ table tbody tr td:first-child{
     border-left: 0;
     text-align: left;
     padding-left: 0;
-    max-width: 160px;
+    max-width: 180px;
 }
 
 table tbody tr td:last-child{
@@ -1026,9 +1026,22 @@ table tbody tr td img{
     display: block;
     margin: auto;
 }
+table tbody .price span{
+    display: none;
+}
+table tbody .price span.active{
+    display: block;
+}
+table tfoot .total h2 span{
+    display: none;
+}
+table tfoot .total h2 span.active{
+    display: inline-block;
+}
 table tbody tr td p{
     margin: 0;
     margin: 0;
+    font-size: 14px;
 }
 table tbody tr td p img{
     display: inline-block;
@@ -1038,11 +1051,14 @@ table tbody tr td p img{
 table tbody tr td img{
     width: 25px;
 }
-
+table tfoot tr td{
+    padding: 10px 0 5px;;
+}
 table tfoot tr td h2{
-    width: 70px;
     margin: 10px auto;
     font-size: 16px;
+    text-align: center;
+    margin: 0;
 }
 table tfoot tr td .button{
     display: block;
@@ -1055,11 +1071,12 @@ table tfoot tr td a{
 }
 table tfoot tr td p{
     text-align: center;
-    margin-bottom: 5px;
+    margin: 0;
 }
 
 table tbody tr td:nth-child(2),
 table tfoot tr td:nth-child(2){
+    background: #634297;
     background: rgba(99,66,150,.23);
 }
 

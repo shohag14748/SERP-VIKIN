@@ -71,7 +71,7 @@
             <div class="page-width">
                 <div class="buttons mt-4">
                     <div class="button-group">
-                        <a href="">Monthly</a>
+                        <a class="active" href="">Monthly</a>
                         <a href="">Annual<span>10% Discount</span></a>
                     </div>
                 </div>
@@ -99,14 +99,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="price">
                                 <td>
-                                    <p>Keyword Credits <span>/ Month</span><img src="asset/image/ex.png" alt=""></p>
+                                    <p>Keyword Credits <small>/ Month</small><img src="asset/image/ex.png" alt=""></p>
                                 </td>
-                                <td>350</td>
-                                <td>1,500</td>
-                                <td>3,250</td>
-                                <td>7,000</td>
+                                <td><span class="active">350</span><span>3,780</span></td>
+                                <td><span class="active">1,500</span><span>16,200</span></td>
+                                <td><span class="active">3,250</span><span>35,100</span></td>
+                                <td><span class="active">7,000</span><span>75,600</span></td>
                             </tr>
                             <tr>
                                 <td>
@@ -182,31 +182,35 @@
                             </tr>
                         </tbody>
                         <tfoot>
-                            <tr>
+                            <tr class="total">
                                 <td></td>
                                 <td>
-                                    <h2><b>£-</b> <br> Monthly</h2>
+                                    <h2><b>£-<span class="active">350</span><span>3,780</span></b> </h2>
+                                    <h2> <span class="active">Monthly</span><span>Annual</span></h2>
                                     <div class="button">
                                         <a href="">Sign Up</a>
                                     </div>
                                     <p><span>*Terms & Conditions Apply</span></p>
                                 </td>
                                 <td>
-                                    <h2><b>£-</b> <br> Monthly</h2>
+                                    <h2><b>£-<span class="active">1,500</span><span>16,200</span></b> </h2>
+                                    <h2> <span class="active">Monthly</span><span>Annual</span></h2>
                                     <div class="button">
                                         <a href="">Sign Up</a>
                                     </div>
                                     <p><span>*Terms & Conditions Apply</span></p>
                                 </td>
                                 <td>
-                                    <h2><b>£-</b> <br> Monthly</h2>
+                                    <h2><b>£-<span class="active">3,250</span><span>35,100</span></b> </h2>
+                                    <h2> <span class="active">Monthly</span><span>Annual</span></h2>
                                     <div class="button">
                                         <a href="">Sign Up</a>
                                     </div>
                                     <p><span>*Terms & Conditions Apply</span></p>
                                 </td>
                                 <td>
-                                    <h2><b>£-</b> <br> Monthly</h2>
+                                    <h2><b>£-<span class="active">7,000</span><span>75,600</span></b></h2>
+                                    <h2> <span class="active">Monthly</span><span>Annual</span></h2>
                                     <div class="button">
                                         <a href="">Sign Up</a>
                                     </div>
@@ -273,6 +277,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="asset/js/jquery-3.4.1.min.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/main.js"></script>
 </body>
 
 </html>
