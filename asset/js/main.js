@@ -40,11 +40,11 @@ $(document).ready(function(){
 });
 
 var canvas = document.getElementById("myChart");
+        canvas.height = 90;
         var ctx = canvas.getContext('2d');
-
         // Global Options:
         Chart.defaults.global.defaultFontColor = 'black';
-        Chart.defaults.global.defaultFontSize = 16;
+        Chart.defaults.global.defaultFontSize = 14;
 
         var data = {
             labels: ["01/02/2019", "01/02/2019", "01/02/2019", "01/02/2019", "01/02/2019", "01/02/2019", "01/02/2019", "01/02/2019", "01/02/2019"],
