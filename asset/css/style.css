@@ -1151,6 +1151,7 @@ label{font-size: 14px;margin: 0;}
 section.chart-detail .chart-width{
     max-width: 990px;
     margin: auto;
+    padding: 30px 0 50px;
 }
 
 
@@ -1420,9 +1421,6 @@ section.chart-detail .chart-width{
     background-color: #ffa200;
 }
 
-.chart{
-    padding-top: 30px;
-}
 
 .chart .chart-content{
     padding: 20px;
