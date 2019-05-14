@@ -1190,7 +1190,12 @@ section.chart-detail .chart-width{
     background: #fff;
     color: #634297;
 }
-
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 30px;
+}
 
 .data-table table{
     border-collapse: collapse;
