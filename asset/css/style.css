@@ -1474,5 +1474,147 @@ section.chart-detail .chart-width{
 
 
 
+.addNewProject{
+    padding: 50px 0;
+}
+.addNewProject .button a{
+    font-size: 14px;
+    padding: 10px 30px;
+}
 
+.start-project{
+    padding: 50px 0 70px;
+    background:  linear-gradient(rgba(255, 255,255, 0.9), rgba(255, 255,255, 0.9)),url(../image/Icon.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 100px;
+}
+.start-project .col-md-4{
+    padding: 20px;
+}
+.start-project .content{
+    max-width: 220px;
+    margin: auto;
+}
+.start-project .content .number{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #634297;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #2c2c2c;
+}
+.start-project .content p{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    min-height: 37px
+}
+.start-project .content img{
+    width: 100%;
+    padding: 5px 10px;
+}
+
+
+
+.projects{
+    min-height: 70vh;
+}
+.single-project{
+    display: flex;
+    border: 3px solid #634297;
+    width: 100%;
+    padding: 30px;
+    align-items:flex-end;
+    margin-bottom: 30px;
+}
+.single-project p{
+    font-size: 14px;
+        margin: 0;
+    line-height: 18px;
+    min-height: 25px;
+}
+.single-project .project-title{
+    width: 35%;
+    align-self: center;
+}
+.single-project .project-title h2{
+    margin-bottom: 15px;
+}
+.single-project h1{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.single-project .project-title p{
+    font-size: 12px;
+}
+.single-project .keyword{
+    width: 20%;
+}
+.single-project .averageRank{
+    width: 20%;
+}
+.single-project .averageRank h1{
+    color: #259a2a;
+}
+.single-project .opportunityAchieved p,
+.single-project .averageRank p{
+    max-width: 80px;
+}
+.single-project .opportunityAchieved{
+    width: 20%;
+    
+}
+
+.single-project .detailButton{
+    width: 5%;
+    align-self: center;
+}
+.single-project .detailButton a{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.single-project .detailButton a img{
+    height: 40px;
+}
+
+
+
+@media (max-width:768px){
+    .start-project .col-md-4{
+        padding: 10px;
+    }
+}
+@media (max-width:578px){
+    .single-project{
+            flex-flow: wrap;
+    }
+    .single-project .project-title{
+        align-self: flex-start;
+    }
+    .single-project .project-title{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .single-project .keyword{
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .single-project .averageRank{
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .single-project .opportunityAchieved{
+/*        margin-bottom: 10px;*/
+        width: 50%;
+    }
+    .single-project .detailButton{
+/*        margin-bottom: 10px;*/
+        width: 50%;
+    }
+}
 
