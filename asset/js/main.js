@@ -39,6 +39,7 @@ $(document).ready(function(){
     
 });
 
+
 var canvas = document.getElementById("myChart");
         canvas.height = 90;
         var ctx = canvas.getContext('2d');
@@ -116,3 +117,9 @@ var canvas = document.getElementById("myChart");
             data: data,
             options: options
         });
+
+
+
+
+
+
