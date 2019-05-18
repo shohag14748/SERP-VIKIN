@@ -1465,129 +1465,9 @@ th::after {
 
 
 
-
-
 /*------------------------------------------*/
-/*  Responsive   */
+/*  Add New Project Button  */
 /*------------------------------------------*/
-
-@media (min-width:991px) {
-    .tracking .content {
-        padding: 40px;
-    }
-
-    .tracking .content h1 {
-        margin-top: 30px;
-    }
-
-    .tracking .content p {
-        margin-top: 40px;
-        margin-bottom: 50px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width:991px) {
-    section.features .content {
-        padding: 30px;
-    }
-
-    section.chart-detail .data-table {
-        overflow-x: auto;
-    }
-
-    section.chart-detail .data-table table {
-        width: 900px;
-    }
-
-    .form .search {
-        width: auto;
-    }
-
-    .form .select {
-        width: 25%;
-    }
-
-    .form .inputs input {
-        width: 20%;
-    }
-}
-
-
-@media (min-width:768px) {
-    section.about-us-details .content.left::after {
-        content: '';
-        width: 2px;
-        height: 100px;
-        background: #634297;
-        position: absolute;
-        right: -14px;
-        top: 50%;
-        transform: translateY(-40%);
-    }
-
-    section.contacts-info .content.middle::after {
-        content: '';
-        width: 2px;
-        height: 40px;
-        background: #634297;
-        position: absolute;
-        right: 0px;
-        top: 50%;
-        transform: translateY(-80%);
-    }
-
-    section.contacts-info .content.middle::before {
-        content: '';
-        width: 2px;
-        height: 40px;
-        background: #634297;
-        position: absolute;
-        left: 0px;
-        top: 50%;
-        transform: translateY(-80%);
-    }
-}
-
-@media (max-width:768px) {
-
-    section.points .contents .moddle::before,
-    section.points .contents .moddle::after {
-        display: none;
-    }
-
-    section.banner-with-bg .content {
-        margin-left: 15px;
-    }
-
-    section.features .content {
-        padding: 30px;
-        width: 200px;
-        margin: auto;
-    }
-
-    section.features .content ul {
-        min-height: 10px;
-    }
-
-    section.about-us-details .content .head {
-        justify-content: center;
-        margin-left: 0;
-    }
-
-    section.pricing .table-content {
-        overflow-x: auto;
-    }
-}
-
-
-@media (max-width:500px) {
-    section.banner-with-bg .content h1 {
-        margin-bottom: 10px;
-    }
-
-}
-
 
 
 
@@ -1599,6 +1479,13 @@ th::after {
     font-size: 14px;
     padding: 10px 30px;
 }
+
+
+/*------------------------------------------*/
+/*  Start Project steps  */
+/*------------------------------------------*/
+
+
 
 .start-project {
     padding: 50px 0 70px;
@@ -1641,6 +1528,12 @@ th::after {
     padding: 5px 10px;
 }
 
+
+
+
+/*------------------------------------------*/
+/*  Project Lists  */
+/*------------------------------------------*/
 
 
 .projects {
@@ -1720,46 +1613,11 @@ th::after {
 
 
 
-@media (max-width:768px) {
-    .start-project .col-md-4 {
-        padding: 10px;
-    }
-}
-
-@media (max-width:578px) {
-    .single-project {
-        flex-flow: wrap;
-    }
-
-    .single-project .project-title {
-        align-self: flex-start;
-    }
-
-    .single-project .project-title {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .single-project .keyword {
-        margin-bottom: 10px;
-        width: 50%;
-    }
-
-    .single-project .averageRank {
-        margin-bottom: 10px;
-        width: 50%;
-    }
-
-    .single-project .opportunityAchieved {
-        width: 50%;
-    }
-
-    .single-project .detailButton {
-        width: 50%;
-    }
-}
 
 
+/*------------------------------------------*/
+/*  Popup  */
+/*------------------------------------------*/
 
 
 
@@ -1983,7 +1841,9 @@ th::after {
 
 
 
-
+/*------------------------------------------*/
+/*  Popup 2nd step  */
+/*------------------------------------------*/
 
 
 
@@ -2070,8 +1930,134 @@ th::after {
     top: 30%;
     right: 10%;
 }
+.submit-buttons{
+    background: #f1f1f1;
+}
 
-@media (max-width:768px){
+
+
+
+
+
+
+
+
+
+/*------------------------------------------*/
+/*  Responsive   */
+/*------------------------------------------*/
+
+@media (min-width:991px) {
+    .tracking .content {
+        padding: 40px;
+    }
+
+    .tracking .content h1 {
+        margin-top: 30px;
+    }
+
+    .tracking .content p {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:991px) {
+    section.features .content {
+        padding: 30px;
+    }
+
+    section.chart-detail .data-table {
+        overflow-x: auto;
+    }
+
+    section.chart-detail .data-table table {
+        width: 900px;
+    }
+
+    .form .search {
+        width: auto;
+    }
+
+    .form .select {
+        width: 25%;
+    }
+
+    .form .inputs input {
+        width: 20%;
+    }
+}
+
+
+@media (min-width:768px) {
+    section.about-us-details .content.left::after {
+        content: '';
+        width: 2px;
+        height: 100px;
+        background: #634297;
+        position: absolute;
+        right: -14px;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+
+    section.contacts-info .content.middle::after {
+        content: '';
+        width: 2px;
+        height: 40px;
+        background: #634297;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-80%);
+    }
+
+    section.contacts-info .content.middle::before {
+        content: '';
+        width: 2px;
+        height: 40px;
+        background: #634297;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-80%);
+    }
+}
+
+@media (max-width:768px) {
+
+    section.points .contents .moddle::before,
+    section.points .contents .moddle::after {
+        display: none;
+    }
+
+    section.banner-with-bg .content {
+        margin-left: 15px;
+    }
+
+    section.features .content {
+        padding: 30px;
+        width: 200px;
+        margin: auto;
+    }
+
+    section.features .content ul {
+        min-height: 10px;
+    }
+
+    section.about-us-details .content .head {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    section.pricing .table-content {
+        overflow-x: auto;
+    }
+
+     .start-project .col-md-4 {
+        padding: 10px;
+    }
     .popup .keyword_usage .col-md-6:first-child::after{
         display: none;
     }
@@ -2083,11 +2069,52 @@ th::after {
         padding: 0 30px;
     }
     
+    
 }
 
-.submit-buttons{
-    background: #f1f1f1;
+
+@media (max-width:500px) {
+    section.banner-with-bg .content h1 {
+        margin-bottom: 10px;
+    }
+
 }
+
+
+@media (max-width:578px) {
+    .single-project {
+        flex-flow: wrap;
+    }
+
+    .single-project .project-title {
+        align-self: flex-start;
+    }
+
+    .single-project .project-title {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .single-project .keyword {
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    .single-project .averageRank {
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    .single-project .opportunityAchieved {
+        width: 50%;
+    }
+
+    .single-project .detailButton {
+        width: 50%;
+    }
+}
+
+
 
 
 
