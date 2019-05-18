@@ -19,7 +19,7 @@ $(document).ready(function () {
         var parent_fieldset = $(this).parents('fieldset');
         var next_step = true;
 
-        parent_fieldset.find('select,input,textarea').each(function () {
+        parent_fieldset.find('select,.project-name input,.domain .top input,textarea,.variables input').each(function () {
             if ($(this).val() == "") {
                 $(this).addClass('input-error');
                 next_step = false;
@@ -35,6 +35,12 @@ $(document).ready(function () {
         }
 
     });
+    
+    $('.add-Competitors').on('click',function(e){
+        e.preventDefault();
+        $(this).addClass('gray-btn');
+        $('.add-Competitors-input').append('<input type="text">')
+    })
 
 });
 
@@ -53,7 +59,7 @@ var data = {
         "#634297"
       ],
       hoverBackgroundColor: [
-        "#FFCE56",
+        "transparent",
         "#36A2EB"
       ],
         borderWidth: 0,
@@ -68,6 +74,9 @@ var promisedDeliveryChart = new Chart(document.getElementById('myPieChart'), {
     cutoutPercentage: 85,
     legend: {
       display: false
+    },
+      tooltips: {
+         enabled: false
     }
   }
 });

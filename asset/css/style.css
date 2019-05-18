@@ -1832,12 +1832,15 @@ th::after {
 .popup .keywords-details .top .button a {
     font-size: 14px;
     padding: 5px 20px;
-    min-width: 90px;
     text-align: center;
-    border-radius: 50px;
     margin-left: 10px;
 }
-
+.gray-btn{
+    background: #aeaeae !important;
+    pointer-events: none !important;
+    border-color: #aeaeae !important;
+    color: #2c2c2c !important;
+}
 .popup .keywords-details .bottom textarea {
     border: 2px solid #634297;
     width: 100%;
