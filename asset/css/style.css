@@ -152,6 +152,9 @@ body {
 .banner img {
     width: 100%;
 }
+.banner .banner-img img:last-child {
+    display: none;
+}
 
 .banner .content {
     position: absolute;
@@ -2068,7 +2071,7 @@ th::after {
         text-align: left;
         padding: 0 30px;
     }
-    
+   
     
 }
 
@@ -2111,6 +2114,14 @@ th::after {
 
     .single-project .detailButton {
         width: 50%;
+    }
+    
+    
+     .banner .banner-img img:first-child {
+        display: none;
+    }
+    .banner .banner-img img:last-child {
+        display: block;
     }
 }
 
