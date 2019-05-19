@@ -164,7 +164,7 @@ body {
     width: 100%;
 }
 
-.banner .banner-img img:last-child {
+.banner-img img:last-child {
     display: none;
 }
 
@@ -2213,11 +2213,11 @@ th::after {
     }
 
 
-    .banner .banner-img img:first-child {
+    .banner-img img:first-child {
         display: none;
     }
 
-    .banner .banner-img img:last-child {
+    .banner-img img:last-child {
         display: block;
     }
 }
