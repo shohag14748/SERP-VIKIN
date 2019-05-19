@@ -168,12 +168,12 @@ body {
 
 .header .nav-item:hover > .drop-down {
     display: block;
-    animation: drop .5s ease;
+    animation: drop .7s ease;
 }
 
 @keyframes drop {
     0% {
-        top: 200%;
+        top: 160%;
         opacity: 0
     }
 
