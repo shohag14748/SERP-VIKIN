@@ -140,6 +140,50 @@ body {
     border: 1px solid #634296;
 }
 
+.header .nav-item {
+    position: relative;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: #634296;
+    padding: 5px;
+    min-width: 176px;
+    left: 0;
+    top: 100%;
+}
+
+.drop-down li a {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+}
+
+.drop-down li a:hover {
+    background: #2c2c2c;
+}
+
+.header .nav-item:hover > .drop-down {
+    display: block;
+    animation: drop .5s ease;
+}
+
+@keyframes drop {
+    0% {
+        top: 200%;
+        opacity: 0
+    }
+
+    100% {
+        top: 100%;
+        opacity: 1
+    }
+}
+
+
 /*------------------------------------------*/
 /*  Banner  */
 /*------------------------------------------*/
@@ -152,6 +196,7 @@ body {
 .banner img {
     width: 100%;
 }
+
 .banner .banner-img img:last-child {
     display: none;
 }
@@ -1696,12 +1741,14 @@ th::after {
     text-align: center;
     margin-left: 10px;
 }
-.gray-btn{
+
+.gray-btn {
     background: #aeaeae !important;
     pointer-events: none !important;
     border-color: #aeaeae !important;
     color: #2c2c2c !important;
 }
+
 .popup .keywords-details .bottom textarea {
     border: 2px solid #634297;
     width: 100%;
@@ -1850,9 +1897,10 @@ th::after {
 
 
 
-.popup .search-engines{
+.popup .search-engines {
     margin: 40px 30px 0;
 }
+
 .popup .search-engines input[type=checkbox] + label {
     display: block;
     margin: 0.4em;
@@ -1876,7 +1924,7 @@ th::after {
     vertical-align: bottom;
     color: transparent;
     transition: .2s;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.7);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
 }
 
 .popup .search-engines input[type=checkbox] + label:active:before {
@@ -1900,31 +1948,38 @@ th::after {
 }
 
 
-.popup .search-engines p{
+.popup .search-engines p {
     font-size: 14px;
 }
-.popup .search-engines p a{
+
+.popup .search-engines p a {
     color: #634297;
     text-decoration: underline;
 }
-.popup .search-engines label{
+
+.popup .search-engines label {
     font-size: 14px;
     text-decoration: underline;
 }
-.popup .keyword_usage .top h2{
+
+.popup .keyword_usage .top h2 {
     text-align: center;
     margin-bottom: 30px;
 }
-.popup .keyword_usage .bottom p{
+
+.popup .keyword_usage .bottom p {
     margin-bottom: 5px;
 }
-.popup .keyword_usage .bottom h2{
+
+.popup .keyword_usage .bottom h2 {
     margin-bottom: 15px;
 }
-.popup .keyword_usage .col-md-6{
+
+.popup .keyword_usage .col-md-6 {
     position: relative;
 }
-.popup .keyword_usage .col-md-6:first-child::after{
+
+.popup .keyword_usage .col-md-6:first-child::after {
     content: '';
     width: 2px;
     height: 60%;
@@ -1933,7 +1988,8 @@ th::after {
     top: 30%;
     right: 10%;
 }
-.submit-buttons{
+
+.submit-buttons {
     background: #f1f1f1;
 }
 
@@ -2030,6 +2086,34 @@ th::after {
 
 @media (max-width:768px) {
 
+    .drop-down {
+        display: block;
+        position: relative;
+        list-style: none;
+        background: transparent;
+        padding: 0px;
+        height: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .drop-down li a {
+        font-size: 14px;
+        color: #634297;
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .drop-down li a:hover {
+        background: transparent;
+        color: #aeaeae;
+    }
+
+    .header .nav-item:hover > .drop-down {
+        display: block;
+        height: 93px;
+    }
+
     section.points .contents .moddle::before,
     section.points .contents .moddle::after {
         display: none;
@@ -2058,21 +2142,24 @@ th::after {
         overflow-x: auto;
     }
 
-     .start-project .col-md-4 {
+    .start-project .col-md-4 {
         padding: 10px;
     }
-    .popup .keyword_usage .col-md-6:first-child::after{
+
+    .popup .keyword_usage .col-md-6:first-child::after {
         display: none;
     }
-    .popup .keyword_usage .bottom{
+
+    .popup .keyword_usage .bottom {
         padding: 0 30px;
     }
-    .popup .keyword_usage .top h2{
+
+    .popup .keyword_usage .top h2 {
         text-align: left;
         padding: 0 30px;
     }
-   
-    
+
+
 }
 
 
@@ -2115,17 +2202,13 @@ th::after {
     .single-project .detailButton {
         width: 50%;
     }
-    
-    
-     .banner .banner-img img:first-child {
+
+
+    .banner .banner-img img:first-child {
         display: none;
     }
+
     .banner .banner-img img:last-child {
         display: block;
     }
 }
-
-
-
-
-
