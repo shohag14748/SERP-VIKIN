@@ -122,6 +122,10 @@ body {
     font-size: 14px;
     color: #634296 !important;
 }
+.header .nav-link i{
+    position: relative;
+    top: -2px;
+}
 
 .header .nav-link:hover,
 .header .nav-item.active .nav-link {
@@ -2051,7 +2055,7 @@ th::after {
         position: absolute;
         list-style: none;
         background: #634296;
-        padding: 5px;
+        padding: 3px;
         min-width: 176px;
         left: 0;
         top: 100%;
@@ -2059,18 +2063,21 @@ th::after {
 
     .drop-down li a {
         font-size: 14px;
-        color: #fff;
+        color: #634296;
         display: block;
-        padding: 5px 10px;
+        padding: 7px 10px;
+        background: #eeeeee;
+        transition: .3s;
     }
 
     .drop-down li a:hover {
         background: #2c2c2c;
+        color: #fff;
     }
 
     .header .nav-item:hover > .drop-down {
         display: block;
-        animation: drop .7s ease;
+        animation: drop .6s ease;
     }
 
     @keyframes drop {
